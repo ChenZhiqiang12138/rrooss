@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 2.8.3)
+
+
+SET(LIB_ART_DRIVER_LIB art_racecar_driver.cpp)
+ADD_LIBRARY(art_driver SHARED ${LIB_ART_DRIVER_LIB})
+ADD_LIBRARY (art_driver_STATIC STATIC ${LIB_ART_DRIVER_LIB})
+SET_TARGET_PROPERTIES(art_driver_STATIC PROPERTIES OUTPUT_NAME "art_driver")
+
